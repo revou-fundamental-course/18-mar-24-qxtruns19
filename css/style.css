@@ -63,13 +63,40 @@ body {
 
 .section-content-container {
     display: flex;
+
 }
 
+.content-banner {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.content-form {
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+
 .form-control {
-    border: 2px solid #234032;
-    border-radius: 4px;
-    padding: 7px;
-    padding-right: 80px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 15px;
+    padding-right: 100px;
+}
+
+.form-group {
+    border-radius: 1 0%;
+    padding: 35px 90px 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
@@ -82,11 +109,12 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    padding: 10px 80px;
+    padding: 15px;
     display: inline-block;
     font-size: 14px;
     margin: 4px 2px;
     transition-duration: 0.4s;
+
 }
 
 .button:hover {
@@ -103,39 +131,39 @@ body {
     padding-right: 20px;
 }
 
-.our-package {
+.package {
     font-size: 24px;
-    background-color: #EDF0F4;
+    background-color: aliceblue;
     padding: 50px;
     text-align: center;
     height: 100px;
-
 }
 
-.package {
-    height: 200px;
+.baris-pertama {
     display: flex;
 }
 
-.package .content-package {
+.baris-pertama .isi-baris-pertama {
     width: 500px;
     height: 200px;
-    margin-bottom: 20px;
     padding: 30px;
-    position: relative;
 }
 
-.call-action h1 {
-    text-align: center;
+.baris-kedua {
+    display: flex;
 }
 
-.call-action p {
+.baris-kedua .isi-baris-kedua {
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+}
+
+.title {
     text-align: center;
-    padding: 20px 100px;
+    padding: 90px;
 }
 
 .footer {
     text-align: center;
-    padding: 20px 100px;
-
 }

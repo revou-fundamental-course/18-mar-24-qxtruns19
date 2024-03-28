@@ -26,7 +26,7 @@
     </header>
     <hr />
 
-    <section class="section-container">
+    <section id="home" class="section-container">
         <header>
             <h1>Your Trusted Travel Agents</h1>
             <h2>Your happiness is our happiness</h2>
@@ -34,8 +34,7 @@
 
         <div class="section-content-container">
             <!-- Konten autoslide banner -->
-            <div
-                style="height: 400px; width: 100%; background-color: #EDF0F4; margin-right:  24px ; margin-left: 30px;">
+            <div class="content-banner">
                 <div class="banner" style="max-width:100%">
                     <img class="mySlides" src="assets/london.png" style="width:100%">
                 </div>
@@ -68,115 +67,108 @@
                     <li>Your first feature, written in the form of a benefit statement</li>
                     <li>Your first feature, written in the form of a benefit statement</li>
                 </ol>
-
             </div>
 
-            <hr class="garis-pemisah">
-
             <!-- Konten Form -->
-            <div style="height: 100%; width: 100%; background-color:#EDF0F4; margin-right: 30px;">
-                <h3> Contact Us</h3>
-                <p> Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
-                <form>
-                    <div class="form-group">
-                        <label class="col-sm-6 control-label">Your Name :</label>
-                        <div class="col-sm-6 inputGroupContainer">
-                            <label>
-                                <input class="form-control" type="text" id="name" name="name"
-                                    placeholder="First and Last Name">
-                            </label>
+            <div class="content-form">
+                <div class="form-group">
+                    <h3> Contact Us</h3>
+                    <p> Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                    <form name="contact-us" id="contact-us" class="contact-us" onsubmit="return validateForm()"
+                        method="post">
+                        <div class="input-field">
+                            <label><b>Your Name :</b></label> <br>
+                            <input class="form-control" type="text" id="name" name="name"
+                                placeholder="First and Last Name">
                         </div>
-                    </div>
-                    <br>
+                        <br>
 
-                    <div class="form-group">
-                        <label class="col-sm-6 control-label">Email Address :</label>
-                        <div class="col-sm-6 inputGroupContainer">
-                            <label>
-                                <input class="form-control" type="email" id="email" name="email"
-                                    placeholder="example@gmail.com">
-                            </label>
+                        <div class="input-field">
+                            <label><b>Email Address :</b></label> <br>
+                            <input class="form-control" type="email" id="email" name="email"
+                                placeholder="example@email.com">
                         </div>
-                    </div>
-                    <br>
+                        <br>
 
-                    <div class="form-group">
-                        <label class="col-sm-6 control-label">What are you interested in?</label>
-                        <div class="col-sm-6 inputGroupContainer">
-                            <label>
-                                <select class="form-control" name="interested" id="interested">
-                                    <option value="">Select an option</option>
-                                    <option value="luar">Perjalanan Luar Negeri</option>
-                                    <option value="dalam">Perjalanan Dalam Negeri</option>
-                                </select>
+                        <div class="input-field">
+                            <label><b>What are you interested in?</b></label> <br>
+                            <select class="form-control" name="interest" id="interest">
+                                <option selected disabled>Select an option</option>
+                                <option value="luar">Perjalanan Luar Negeri</option>
+                                <option value="dalam">Perjalanan Dalam Negeri</option>
+                            </select>
                             </label>
                             <br><br>
                         </div>
-                    </div>
-                    <button class="button">SEND</button>
+                </div>
+                <input type="submit" class="button" onclick="validateForm()"></input>
                 </form>
             </div>
+    </section>
+
+    <section id="our-package">
+        <div class="package">
+            <h1> Our Packages</h1>
         </div>
     </section>
 
-    <section id="our-package" class="our-package">
-        <h1>Our Package</h1>
-    </section>
-
-    <section id="package" class="package">
-        <div class="content-package">
+    <section id="baris-pertama" class="baris-pertama">
+        <div class="isi-baris-pertama">
             <h4><i class="fa fa-lightbulb-o"></i> Bali</h4>
             <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
         </div>
-        <div class="content-package">
+        <div class="isi-baris-pertama">
             <h4><i class="fa fa-lightbulb-o"></i> Japan</h4>
             <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik</p>
         </div>
-        <div class="content-package">
+        <div class="isi-baris-pertama">
             <h4><i class="fa fa-lightbulb-o"></i> Singapore</h4>
             <p>Travel dan wisata di Singapore. kunjungi cagar budaya dan kuliner yang menarik</p>
         </div>
-
     </section>
 
-    <section id="package" class="package">
-
-        <div class="content-package">
-            <h4><i class="fa fa-star"></i> Bandung</h4>
+    <section id="baris-kedua" class="baris-kedua">
+        <div class="isi-baris-kedua">
+            <h4><i class="fa fa-star"></i> Bandug</h4>
             <p>Travel dan wisata di Bandung. kunjungi cagar budaya dan kuliner yang menarik</p>
         </div>
-        <div class="content-package">
+        <div class="isi-baris-kedua">
             <h4><i class="fa fa-star"></i> Surabaya</h4>
-            <p>Travel dan wisata di Surabaya. kunjungi cagar budaya dan kuliner yang menarik</p>
+            <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik</p>
         </div>
-        <div class="content-package">
-            <h4><i class="fa fa-star"></i> Third Feature</h4>
-            <p>This description supports and extends the bullet point above.</p>
+        <div class="isi-baris-kedua">
+            <h4><i class="fa fa-star"></i> Malang</h4>
+            <p>Travel dan wisata di Malang. kunjungi cagar budaya dan kuliner yang menarik</p>
         </div>
+    </section>
 
+    <hr>
+
+    <section id="action" class="action">
+        <div class="title">
+            <h1> Your Closing Argument Headline</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus bibendum nulla quis dictum. Class
+                aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin ut euismod sem,
+                vitae
+                porttitor ante. </p>
+            <center>
+                <button class="button"><b>CALL TO ACTION</b></button>
+            </center>
+        </div>
     </section>
     <hr>
 
-    <section id="call-action" class="call-action">
-        <h1>Your Closing Argument Headline</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quidem illum repellat totam rem animi
-            veniam debitis fugit corrupti eum. Iusto obcaecati officia ratione magni, error perspiciatis nulla itaque
-            nobis.</p>
-        <center>
-            <button type="submit" class="button">Call To Action</button>
-        </center>
-    </section>
-    <br>
-    <hr>
-
-    <footer id="footer" class="footer">
-        <h1>Thynk Travel</h1>
-        <a href="#">Terms of service</a>
-        <a href="#">Privacy Policy</a>
+    <section id="footer" class="footer">
+        <h2> Thynk Travel </h2>
+        <p>Terms of Service | Privacy Policy</p>
         <p>&copy 2024 Qutrun Nada Salsabila</p>
-    </footer>
+    </section>
 
-    <button class="button-top">SEND</button>
+
+
+
+
 
     <script src="js/script.js"></script>
 
